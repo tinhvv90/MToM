@@ -9,11 +9,10 @@
 import UIKit
 
 class IncomeCell: TextCell {
-    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         textContentLabel.font = UIFont.boldSystemFontOfSize(20)
-        textContentLabel.tintColor = UIColor.mainColor()
+        textContentLabel.textColor = UIColor.mainColor()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -23,6 +22,7 @@ class IncomeCell: TextCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
     
     override func setSelected(selected: Bool, animated: Bool) {

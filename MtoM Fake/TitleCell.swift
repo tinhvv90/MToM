@@ -38,7 +38,7 @@ class TitleCell: UITableViewCell {
     func layoutHeaderCell() {
         
         // layout headerCell
-        headerOfCell.mt_innerAlign(left: 8, top: 4, right: 8, bottom: 16)
+        headerOfCell.mt_innerAlign(left: 8, top: 8, right: 8, bottom: 16)
         headerOfCell.backgroundColor = UIColor.mainColor()
         headerOfCell.roundBorder()
     }
@@ -46,12 +46,14 @@ class TitleCell: UITableViewCell {
     func layoutBodyCell() {
         
         // layout background
-        backgroundOfCell.mt_innerAlign(left: 8, top: 9, right: 8, bottom: 0)
-        backgroundOfCell.backgroundColor = UIColor.contentCellColor()
+        backgroundOfCell.mt_innerAlign(left: 8, top: 13, right: 8, bottom: 0)
+        backgroundOfCell.backgroundColor = UIColor.whiteColor()
         
         // layout detailLabel
         backgroundOfCell.addSubview(detailLabel)
         detailLabel.mt_innerAlign(left: 16, top: 8, right: 8, bottom: 8)
+        detailLabel.textColor = UIColor.mainColor()
+        detailLabel.font = UIFont.boldSystemFontOfSize(16)
         // layout seperateLine
         
     }

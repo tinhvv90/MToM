@@ -34,11 +34,9 @@
 		DCA5E3021C12C3DF00C44CBB /* SexTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA5E3011C12C3DF00C44CBB /* SexTableViewCell.swift */; };
 		DCADC11A1C15E254005E20AB /* InformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADC1191C15E254005E20AB /* InformationVC.swift */; };
 		DCE230DA1C82BEDF001C8ABC /* CityPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE230D91C82BEDF001C8ABC /* CityPickerView.swift */; };
-		DCE230DC1C82BF11001C8ABC /* CustomHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE230DB1C82BF11001C8ABC /* CustomHeaderCell.swift */; };
 		DCE230DE1C82BF51001C8ABC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE230DD1C82BF51001C8ABC /* Data.swift */; };
 		DCE230E01C82BF8C001C8ABC /* JobPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE230DF1C82BF8C001C8ABC /* JobPopView.swift */; };
 		DCE230E21C82BFEC001C8ABC /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE230E11C82BFEC001C8ABC /* PickerView.swift */; };
-		DCE230E41C82C02A001C8ABC /* PickerViewForPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE230E31C82C02A001C8ABC /* PickerViewForPopView.swift */; };
 		DCE230E61C82C04D001C8ABC /* PlacePopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE230E51C82C04D001C8ABC /* PlacePopView.swift */; };
 		DCE230E81C82C078001C8ABC /* PopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE230E71C82C078001C8ABC /* PopView.swift */; };
 		DCE230EA1C82C0A9001C8ABC /* ProvincePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE230E91C82C0A9001C8ABC /* ProvincePickerView.swift */; };
@@ -97,11 +95,9 @@
 		DCA5E3011C12C3DF00C44CBB /* SexTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SexTableViewCell.swift; sourceTree = "<group>"; };
 		DCADC1191C15E254005E20AB /* InformationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationVC.swift; sourceTree = "<group>"; };
 		DCE230D91C82BEDF001C8ABC /* CityPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityPickerView.swift; sourceTree = "<group>"; };
-		DCE230DB1C82BF11001C8ABC /* CustomHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderCell.swift; sourceTree = "<group>"; };
 		DCE230DD1C82BF51001C8ABC /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		DCE230DF1C82BF8C001C8ABC /* JobPopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobPopView.swift; sourceTree = "<group>"; };
 		DCE230E11C82BFEC001C8ABC /* PickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
-		DCE230E31C82C02A001C8ABC /* PickerViewForPopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewForPopView.swift; sourceTree = "<group>"; };
 		DCE230E51C82C04D001C8ABC /* PlacePopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacePopView.swift; sourceTree = "<group>"; };
 		DCE230E71C82C078001C8ABC /* PopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopView.swift; sourceTree = "<group>"; };
 		DCE230E91C82C0A9001C8ABC /* ProvincePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvincePickerView.swift; sourceTree = "<group>"; };
@@ -149,8 +145,8 @@
 		DC192E2F1C73537C00A54AEA /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				DC192E301C73539400A54AEA /* Menu.swift */,
 				DC192E321C7353B400A54AEA /* MenuButton.swift */,
+				DC192E301C73539400A54AEA /* Menu.swift */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -159,7 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				DCE230E11C82BFEC001C8ABC /* PickerView.swift */,
-				DCE230E31C82C02A001C8ABC /* PickerViewForPopView.swift */,
+				DCE230D91C82BEDF001C8ABC /* CityPickerView.swift */,
+				DCE230E91C82C0A9001C8ABC /* ProvincePickerView.swift */,
 			);
 			name = PickerView;
 			sourceTree = "<group>";
@@ -168,14 +165,9 @@
 			isa = PBXGroup;
 			children = (
 				DCADC1191C15E254005E20AB /* InformationVC.swift */,
-				DCE230D91C82BEDF001C8ABC /* CityPickerView.swift */,
-				DCE230DF1C82BF8C001C8ABC /* JobPopView.swift */,
-				DCE230DB1C82BF11001C8ABC /* CustomHeaderCell.swift */,
-				DCE230E51C82C04D001C8ABC /* PlacePopView.swift */,
-				DCE230E71C82C078001C8ABC /* PopView.swift */,
-				DCE230E91C82C0A9001C8ABC /* ProvincePickerView.swift */,
-				DCE230EB1C82C0D4001C8ABC /* SalaryPopView.swift */,
+				DC192E2A1C73522200A54AEA /* SetDashLine.swift */,
 				DC192E2F1C73537C00A54AEA /* Menu */,
+				DCE230EF1C82C3B0001C8ABC /* PopView */,
 				DC192E2C1C73527800A54AEA /* TableView */,
 				DCE230ED1C82C183001C8ABC /* TestCityPickerView.swift */,
 			);
@@ -187,6 +179,7 @@
 			children = (
 				DC9064E91C17366B005BED18 /* Job.swift */,
 				DCE230DD1C82BF51001C8ABC /* Data.swift */,
+				DCA5E2F91C12991F00C44CBB /* Utils.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -224,12 +217,9 @@
 				DCADC1181C15E1BE005E20AB /* PickerAge */,
 				DC9064EB1C173671005BED18 /* Model */,
 				DC9064DE1C17339C005BED18 /* informationVC */,
-				DC192E341C73543500A54AEA /* PickerView */,
 				DCA5E2CE1C1294DA00C44CBB /* Assets.xcassets */,
 				DCA5E2D01C1294DA00C44CBB /* LaunchScreen.storyboard */,
 				DCA5E2D31C1294DA00C44CBB /* Info.plist */,
-				DCA5E2F91C12991F00C44CBB /* Utils.swift */,
-				DC192E2A1C73522200A54AEA /* SetDashLine.swift */,
 			);
 			path = "MtoM Fake";
 			sourceTree = "<group>";
@@ -285,6 +275,18 @@
 				DC9578151C14746C00692EB2 /* PickerViewController.swift */,
 			);
 			name = PickerAge;
+			sourceTree = "<group>";
+		};
+		DCE230EF1C82C3B0001C8ABC /* PopView */ = {
+			isa = PBXGroup;
+			children = (
+				DCE230E71C82C078001C8ABC /* PopView.swift */,
+				DCE230DF1C82BF8C001C8ABC /* JobPopView.swift */,
+				DCE230E51C82C04D001C8ABC /* PlacePopView.swift */,
+				DCE230EB1C82C0D4001C8ABC /* SalaryPopView.swift */,
+				DC192E341C73543500A54AEA /* PickerView */,
+			);
+			name = PopView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -434,7 +436,6 @@
 				DCE230DA1C82BEDF001C8ABC /* CityPickerView.swift in Sources */,
 				DCE230E21C82BFEC001C8ABC /* PickerView.swift in Sources */,
 				DCA5E2F81C12980500C44CBB /* LivingTableViewCell.swift in Sources */,
-				DCE230E41C82C02A001C8ABC /* PickerViewForPopView.swift in Sources */,
 				DC9064E41C173416005BED18 /* IncomeCell.swift in Sources */,
 				DCE230E61C82C04D001C8ABC /* PlacePopView.swift in Sources */,
 				DCE230EC1C82C0D4001C8ABC /* SalaryPopView.swift in Sources */,
@@ -442,7 +443,6 @@
 				DCA5E2F61C1297E700C44CBB /* LivingViewController.swift in Sources */,
 				DC9064E21C173403005BED18 /* TextCell.swift in Sources */,
 				DCA5E3021C12C3DF00C44CBB /* SexTableViewCell.swift in Sources */,
-				DCE230DC1C82BF11001C8ABC /* CustomHeaderCell.swift in Sources */,
 				DCA5E2CA1C1294DA00C44CBB /* ViewController.swift in Sources */,
 				DC192E311C73539400A54AEA /* Menu.swift in Sources */,
 				DCA5E2FE1C12C3B800C44CBB /* WorkingViewController.swift in Sources */,
