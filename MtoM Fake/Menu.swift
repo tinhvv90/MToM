@@ -26,15 +26,10 @@ class Menu: UIView {
     convenience init(vc: InformationVC, frame: CGRect) {
         self.init(frame: frame)
         self.vc = vc
-        spaceFilter = MenuButton(informationVC: vc)
-        salaryFilter = MenuButton(informationVC: vc)
-        jobFilter = MenuButton(informationVC: vc)
+        
     }
     
     override func layoutSubviews() {
-        spaceFilter = MenuButton(menuBt: self)
-        salaryFilter = MenuButton(menuBt: self)
-        jobFilter = MenuButton(menuBt: self)
         self.clipsToBounds = true
         setTitleForFilterButton()
         asignSetOfButtonForMenuButton()

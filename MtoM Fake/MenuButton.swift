@@ -10,24 +10,13 @@ import UIKit
 
 class MenuButton: UIButton {
     
-    
-    
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-    // Drawing code
-    }
-    */
-    
-    
-    
     private var selectedButtonTitle = NSMutableAttributedString()
     private var normalButtonTitle = NSMutableAttributedString()
     private var mutableSubTitle = NSMutableAttributedString()
     
     var otherButtons = [MenuButton]()
     let imageArrow = UIImageView(image: UIImage(named: "ic_arrow_down"))
+    var popView : PopView?
     
     var title : String = "" {
         didSet {
@@ -58,8 +47,12 @@ class MenuButton: UIButton {
         setupMenuButton()
     }
     
+    convenience init(popView: PopView) {
+        self.init(frame: CGRectZero)
+        self.popView = popView
+    }
     
-    override func awakeFromNib() {
+   override func awakeFromNib() {
         super.awakeFromNib()
         setupMenuButton()
     }
@@ -93,9 +86,10 @@ class MenuButton: UIButton {
         super.layoutSubviews()
         if selected {
             backgroundColor = UIColor.whiteColor()
-            
+            popView?.showCityPickerView()
         } else {
             backgroundColor = UIColor.clearColor()
+            popView?.hidePickerView()
         }
         layoutArrowDown()
     }

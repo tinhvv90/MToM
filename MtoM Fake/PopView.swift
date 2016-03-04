@@ -129,7 +129,7 @@ class PopView: UIView {
         }
         for item in pickerViews {
             line4.addSubview(item)
-            item.hidden = true
+//            item.hidden = true
             item.mt_innerAlign(left: 4, top: 0, right: 4, bottom: -5)
             item.backgroundColor = UIColor.whiteColor()
             item.roundBorder()
@@ -170,19 +170,7 @@ class PopView: UIView {
     }
     
     func hidePopView(sender: AnyObject) {
-        self.hidden = true
+        self.removeFromSuperview()
     }
-    
-    
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-    // Drawing code
-    }
-    */
-    
-    
-    
     
 }
